@@ -1,0 +1,5 @@
+- [x] Fix error handling in Contact.tsx to show error toast on email sending failure instead of success
+- [x] Test the form submission to ensure proper error reporting
+- [x] Update email function to use Gmail SMTP for direct email delivery
+- [ ] Set up Gmail app password and add SMTP credentials to Supabase environment variables
+- [ ] Deploy the updated function and test email delivery
