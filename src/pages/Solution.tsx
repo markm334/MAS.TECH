@@ -28,7 +28,7 @@ import Footer from "@/components/Footer";
 import InteractiveProductExplorer from "@/components/InteractiveProductExplorer";
 import SystemArchitectureDiagram from "@/components/SystemArchitectureDiagram";
 import masProductMain from "@/assets/BETTY BG MAS.png";
-import solutionDignity from "@/assets/solution-dignity.jpg";
+import solutionDignity from "@/assets/happy.jpeg";
 
 const coreFeatures = [
   {

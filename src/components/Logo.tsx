@@ -1,4 +1,4 @@
-import masLogo from "@/assets/mas-logo-new.png";
+import masLogo from "@/assets/logos/logo.png";
 
 interface LogoProps {
   className?: string;

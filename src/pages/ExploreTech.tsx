@@ -404,7 +404,7 @@ const ExploreTech = () => {
               {[
                 {
                   title: "High-Torque Actuators",
-                  desc: "Dual 400W brushless DC motors with integrated planetary gearboxes for smooth, silent operation.",
+                  desc: "Dual 350W brushless DC motors with integrated planetary gearboxes for smooth, silent operation.",
                   spec: "80Nm Peak Torque",
                   icon: Zap
                 },
@@ -416,7 +416,7 @@ const ExploreTech = () => {
                 },
                 {
                   title: "Energy Management",
-                  desc: "LiFePO4 battery chemistry with a custom Smart BMS for 12+ hours of continuous operation.",
+                  desc: "24V 100Ah LiFePO4 battery pack with a custom Smart BMS for 12+ hours of continuous operation.",
                   spec: "2000+ Cycle Life",
                   icon: Battery
                 }
@@ -612,7 +612,7 @@ void update_stability_matrix(SensorData *data) {
                     <Battery className="w-4 h-4 text-green-500" />
                     <span className="text-[10px] font-bold text-foreground uppercase">Power Cell</span>
                   </div>
-                  <div className="text-xs text-muted-foreground">LiFePO4 48V 20Ah with Smart BMS</div>
+                  <div className="text-xs text-muted-foreground">24V 100Ah LiFePO4 with Smart BMS</div>
                 </motion.div>
 
                 <motion.div
@@ -624,7 +624,7 @@ void update_stability_matrix(SensorData *data) {
                     <Zap className="w-4 h-4 text-primary" />
                     <span className="text-[10px] font-bold text-foreground uppercase">Actuators</span>
                   </div>
-                  <div className="text-xs text-muted-foreground">Dual 400W Brushless DC Motors</div>
+                  <div className="text-xs text-muted-foreground">Dual 350W Brushless DC Motors</div>
                 </motion.div>
               </div>
             </div>

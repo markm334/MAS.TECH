@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import markMurangiri from "@/assets/mar.png";
+import markMurangiri from "@/assets/mark.png";
 
 const teamMembers = [
   {
@@ -36,10 +36,10 @@ const advisors = [
     icon: Heart
   },
   {
-    name: "Prof. James Wilson",
-    title: "Engineering Advisor",
-    description: "Mechanical and biomedical engineering expertise",
-    icon: Award
+    name: "Melilizwe Gqobo",
+    title: "Venture Coach",
+    description: "Expert guidance in startup development and business growth",
+    icon: Target
   },
   {
     name: "Elena Rodriguez",
@@ -140,7 +140,7 @@ const Team = () => {
                           <img 
                             src={member.image} 
                             alt={member.name} 
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover object-top"
                           />
                         ) : (
                           <div className="w-full h-full bg-gradient-hero flex items-center justify-center">

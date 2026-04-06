@@ -18,7 +18,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GlobalCrisisMap from "@/components/GlobalCrisisMap";
 import problemMobility from "@/assets/african-struggle-transfer.jpg";
-import caregiverStrain from "@/assets/caregiver-strain.jpg";
+import caregiverStrain from "@/assets/challenge.png";
 
 const globalStats = [
   { 

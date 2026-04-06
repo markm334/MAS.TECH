@@ -11,7 +11,7 @@ import idea4 from "@/assets/idea 4.jpeg";
 import idea5 from "@/assets/idea 5.jpg";
 import idea6 from "@/assets/idea 6.jpeg";
 import idea7 from "@/assets/idea 7.jpg";
-import idea8 from "@/assets/idea 8.png";
+import idea8 from "@/assets/MAS.png";
 import idea9 from "@/assets/idea 9.png";
 
 const journeySteps = [

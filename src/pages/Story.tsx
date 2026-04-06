@@ -7,8 +7,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import InteractiveTimeline from "@/components/InteractiveTimeline";
 import EvolutionGallery from "@/components/EvolutionGallery";
-import foundersStory from "@/assets/founders-story.jpg";
-import markMurangiri from "@/assets/mar.png";
+import foundersStory from "@/assets/a.png";
+import markMurangiri from "@/assets/mark.png";
 
 const timeline = [
   {
@@ -204,7 +204,7 @@ const Story = () => {
                   <img 
                     src={markMurangiri} 
                     alt="Mark Murangiri" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
                 <div className="text-center">
@@ -287,7 +287,7 @@ const Story = () => {
                     <img 
                       src={markMurangiri} 
                       alt="Mark Murangiri" 
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-top"
                     />
                   </div>
                   <h3 className="font-serif text-3xl font-bold text-foreground mb-1">Mark Murangiri</h3>

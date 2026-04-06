@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "@/hooks/useAnimations";
 import { Quote, Heart } from "lucide-react";
-import foundersStory from "@/assets/founders-story.jpg";
-import markMurangiri from "@/assets/mar.png";
+import foundersStory from "@/assets/a.png";
+import markMurangiri from "@/assets/mark.png";
 
 const FoundersStorySection = () => {
   const { ref, isInView } = useInView(0.1);
@@ -119,7 +119,7 @@ const FoundersStorySection = () => {
                 <img 
                   src={markMurangiri} 
                   alt="Mark Murangiri" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <div>

@@ -196,7 +196,7 @@ const Invest = () => {
 
               <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 max-w-md mx-auto mb-8">
                 <div className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-2">
-                  $2.5M
+                  KSh 20M
                 </div>
                 <p className="text-primary-foreground/70 mb-4">
                   Target funding to bring MAS to market
@@ -209,7 +209,7 @@ const Invest = () => {
                     className="h-full bg-secondary rounded-full"
                   />
                 </div>
-                <p className="text-sm text-primary-foreground/60 mt-2">18% raised so far</p>
+                <p className="text-sm text-primary-foreground/60 mt-2">18% raised so far in Kenyan shillings</p>
               </div>
 
               <div className="flex flex-wrap justify-center gap-4">
@@ -473,7 +473,7 @@ const Invest = () => {
               <div className="grid md:grid-cols-3 gap-6 mb-12">
                 {[
                   { label: "Market Size", value: "$30B+", note: "and growing 7-8% annually" },
-                  { label: "Target Raise", value: "$2.5M", note: "seed round" },
+                  { label: "Target Raise", value: "KSh 20M", note: "seed round" },
                   { label: "Exit Opportunities", value: "Multiple", note: "acquisition, partnership, IPO" },
                 ].map((item, index) => (
                   <motion.div

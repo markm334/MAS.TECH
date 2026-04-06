@@ -68,8 +68,8 @@ const features = [
 const techSpecs = [
   { label: "Processor", value: "ARM Cortex-M7" },
   { label: "Sensors", value: "64-point Array" },
-  { label: "Battery", value: "LiFePO4 48V" },
-  { label: "Motors", value: "Dual 400W BLDC" },
+  { label: "Battery", value: "24V 100Ah LiFePO4" },
+  { label: "Motors", value: "Dual 350W BLDC" },
 ];
 
 const InteractiveProductExplorer = () => {

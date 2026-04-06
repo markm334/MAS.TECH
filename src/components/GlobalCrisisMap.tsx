@@ -7,7 +7,7 @@ const hotspots = [
   { id: 2, x: "50%", y: "35%", label: "Europe", value: "20M+", status: "Aging Population" },
   { id: 3, x: "55%", y: "65%", label: "Africa", value: "80M+", status: "Critical Access Gap" },
   { id: 4, x: "75%", y: "45%", label: "Asia", value: "150M+", status: "Rapid Growth" },
-  { id: 5, x: "30%", y: "70%", label: "South America", value: "25M+", status: "Rising Need" },
+  { id: 5, x: "30%", y: "70%", label: "Ethiopia", value: "25M+", status: "Rising Need" },
 ];
 
 const GlobalCrisisMap = () => {

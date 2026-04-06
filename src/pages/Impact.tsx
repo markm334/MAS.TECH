@@ -24,7 +24,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import AdvancedImpactDashboard from "@/components/AdvancedImpactDashboard";
-import communityImg from "@/assets/african-dignity-hope.jpg";
+import communityImg from "@/assets/new.jpeg";
 import { 
   AreaChart, 
   Area, 
@@ -84,9 +84,9 @@ const impactGoals = [
 ];
 
 const environmentalImpact = [
-  { icon: TreePine, title: "Bamboo Frames", description: "Sustainable, rapidly renewable material replacing traditional metals", percentage: "40%" },
+  { icon: Recycle, title: "Recycled Lithium Batteries", description: "We repurpose used lithium battery packs, recovering cells and materials for secondary applications in MAS components.", percentage: "70%" },
   { icon: Recycle, title: "Recycled Components", description: "Metal components sourced from recycled materials", percentage: "60%" },
-  { icon: Leaf, title: "Bioplastics", description: "Corn-based bioplastics for non-structural components", percentage: "25%" },
+  { icon: Leaf, title: "Solar Energy", description: "We charge our batteries using solar energy to reduce grid dependency and lower emissions.", percentage: "100%" },
   { icon: Droplets, title: "Low-Impact Assembly", description: "Designed for local assembly to minimize emissions", percentage: "50%" },
 ];
 
@@ -94,7 +94,7 @@ const testimonials = [
   {
     quote: "For the first time in years, I feel like I'm in control of my own body. MAS gave me back my independence.",
     name: "Grace W.",
-    role: "MAS User",
+    role: "MAS Tester",
     location: "Nairobi, Kenya",
     image: "GW"
   },
@@ -308,7 +308,7 @@ const Impact = () => {
                   {[
                     { region: "South Africa", status: "Strategic Partner", partners: 1 },
                     { region: "India", status: "Healthcare Affiliate", partners: 1 },
-                    { region: "South America", status: "Research Collaborator", partners: 1 },
+                    { region: "ETHIOPIA", status: "Research Collaborator", partners: "1 Partners with ETHIOPIA" },
                   ].map((item, i) => (
                     <div key={i} className="flex items-center justify-between p-4 rounded-xl bg-muted/50 border border-border">
                       <div className="flex items-center gap-3">
@@ -317,7 +317,9 @@ const Impact = () => {
                       </div>
                       <div className="text-right">
                         <div className="text-xs font-bold text-primary uppercase">{item.status}</div>
-                        <div className="text-xs text-muted-foreground">{item.partners} Partners</div>
+                        <div className="text-xs text-muted-foreground">
+                          {typeof item.partners === 'string' ? item.partners : `${item.partners} Partners`}
+                        </div>
                       </div>
                     </div>
                   ))}
@@ -406,12 +408,12 @@ const Impact = () => {
         {/* Impact Goals */}
         <section className="py-24 bg-gradient-soft">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-3 gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="relative rounded-3xl overflow-hidden shadow-elevated"
+                className="relative rounded-3xl overflow-hidden shadow-elevated lg:col-span-1"
               >
                 <img
                   src={communityImg}
@@ -430,7 +432,7 @@ const Impact = () => {
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="space-y-6"
+                className="space-y-6 lg:col-span-2"
               >
                 <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">
                   Our Impact Goals

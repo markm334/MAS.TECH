@@ -13,10 +13,10 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import InquiryModal from "./InquiryModal";
 
-// Inline TikTok icon since lucide-react doesn't include TikTok
+// Inline TikTok icon - accurate TikTok logo
 const TikTok = (props: any) => (
   <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" {...props}>
-    <path d="M12.003 2v.004v9.247a3.75 3.75 0 1 1-3.75-3.75V8.5h3.75V2h2.25v3.75h3.75v2.25c0 3.52-2.85 6.37-6.37 6.37A6.37 6.37 0 0 1 5.63 8.5 6.37 6.37 0 0 1 12 2.13V2h.003z" />
+    <path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z"/>
   </svg>
 );
 
@@ -147,9 +147,14 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
-                <span className="text-primary-foreground/70 text-sm">
+                <a
+                  href="https://www.google.com/maps/place/Assistive+System+Centre/@-0.6705353,37.1894538,15z/data=!3m1!4b1!4m6!3m5!1s0x18289900276db7a5:0x2c45f616d99cfccb!8m2!3d-0.6705353!4d37.2078865!16s%2Fg%2F11msf2qrlx?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-foreground/70 hover:text-secondary transition-colors text-sm"
+                >
                   Sagana, Kenya
-                </span>
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-secondary shrink-0" />

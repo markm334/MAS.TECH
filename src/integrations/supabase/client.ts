@@ -5,10 +5,17 @@ import type { Database } from './types';
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
 const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
 
+// For development, provide fallback values to prevent crashes
+const DEFAULT_SUPABASE_URL = 'https://ukcrzobggnasrfhxhsop.supabase.co';
+const DEFAULT_SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVrY3J6b2JnZ25hc3JmaHhoc29wIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc0NjA0NTksImV4cCI6MjA4MzAzNjQ1OX0.kPVZLyWtLG_tVHGN54uoDYq2X86J_uQyn7uuTHOlSgs';
+
+const finalUrl = SUPABASE_URL || DEFAULT_SUPABASE_URL;
+const finalKey = SUPABASE_PUBLISHABLE_KEY || DEFAULT_SUPABASE_KEY;
+
 // Import the supabase client like this:
 // import { supabase } from "@/integrations/supabase/client";
 
-export const supabase = createClient<Database>(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
+export const supabase = createClient<Database>(finalUrl, finalKey, {
   auth: {
     storage: localStorage,
     persistSession: true,

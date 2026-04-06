@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import heroCare from "@/assets/african-caregiver-strain.jpg";
+import heroCare from "@/assets/me.jpeg";
 
 const stats = [
   { icon: Users, value: "1B+", label: "People Need Help" },
@@ -55,10 +55,10 @@ const Home = () => {
             <img
               src={heroCare}
               alt="Caregiver helping elderly person with dignity and compassion"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-bottom"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/70 to-foreground/40" />
-            <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 via-foreground/50 to-foreground/70" />
           </div>
 
           {/* Floating Elements */}
